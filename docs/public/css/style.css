@@ -1,0 +1,121 @@
+::selection {
+  background: #00694e;
+  color: #ffffff;
+}
+
+::-moz-selection {
+  background: #00694e;
+  color: #ffffff;
+}
+
+html {
+  font: normal 400 1rem "Overpass", sans-serif;
+}
+
+body {
+  margin: 0 auto;
+  color: #ffffff;
+  text-align: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url("../assets/img/rift.png");
+  background-color: #00694e;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+}
+
+.landing {
+  padding: 20vh 0 0 0;
+  height: 60vh;
+}
+
+.container {
+  margin: 0 auto 13vh auto;
+  width: 70%;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.text-xl {
+  margin: 0;
+  font-weight: 900;
+  font-size: 5rem;
+  text-shadow: 6px 8px #222222;
+}
+
+.text-lg {
+  margin: 0;
+  font-weight: 900;
+  font-size: 1.2rem;
+  text-shadow: 2px 4px #222222;
+}
+
+.text-md {
+  margin: 0;
+  font-weight: 400;
+  font-size: .8rem;
+  text-shadow: 2px 4px #222222;
+}
+
+.navbar {
+  width: 100%;
+  height: 7vh;
+  margin: 0 0 13vh 0;
+}
+
+.navitem {
+  margin: 30px 20px;
+  padding: 10px 20px;
+  float: left;
+  font-weight: 700;
+  font-size: .6rem;
+  text-shadow: 2px 3px #222222;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 20px;
+}
+
+.navitem:hover {
+  transform: translateY(-1px);
+}
+
+.navitem:active {
+  transform: translateY(1px);
+}
+
+.navitem.discord {
+  float: right;
+}
+
+@media (min-width: 576px) {
+  html {
+    font-size: 1.4rem;
+  }
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 1.8rem;
+  }
+}
+
+@media (min-width: 992px) {
+  html {
+    font-size: 2.1rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  html {
+    font-size: 2.5rem;
+  }
+}
