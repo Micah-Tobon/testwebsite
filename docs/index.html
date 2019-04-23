@@ -43,6 +43,8 @@
 
   <script>
     // Initialize Firebase
+    var temp = 1;
+
     var config = {
       apiKey: "AIzaSyBvVwFxELYaGYHk1rIbxVEMgnkPX6Mrkj8",
       authDomain: "ohioulol-403bf.firebaseapp.com",
@@ -124,8 +126,10 @@
             var isAnonymous = user.isAnonymous;
             var uid = user.uid;
             var providerData = user.providerData;
-            document.getElementById("test-form").style.visibility="visible";
-            // item.children[0].className = "wrapper2"
+            if(temp === 1){
+              document.getElementById("test-form").style.visibility="visible";
+              temp = 2;
+            }
             // [START_EXCLUDE]
             document.getElementById('quickstart-sign-in-status').textContent = 'Signed in';
             document.getElementById('quickstart-sign-in').textContent = 'Sign out';
