@@ -2,6 +2,104 @@
   height: 80vh;
   padding: 0 50px 0 50px;
 }
+#my-login-button-target{
+  text-align: center;
+}
+.textarea{
+  max-width: 50px;
+  max-height: 50000px;
+}
+
+#Day{
+  padding-right: 95px;
+}
+.comments{
+  width: 350px;
+  height: 50px;
+  text-align: center;
+}
+.text{
+  text-align: justify;
+  padding-top: 25px;
+}
+.first_name{
+  font-size: 50px;
+
+}
+.Discord_Name{
+  max-height: 5000px;
+  height:200px;
+  font-size:14pt;
+}
+
+.wrapper {
+  visibility: hidden;
+  display: grid;
+  grid-template-columns: 25% 25% 25%;
+  grid-template-rows: 8% 8% 8% 7% 8% 7% 8% 8% 8%  ;
+  grid-gap: 0px;
+  /* justify-items: center; */
+  align-items: center;
+
+
+}
+.wrapper2 {
+  visibility: visible;
+  display: grid;
+  grid-template-columns: 25% 25% 25%;
+  grid-template-rows: 8% 8% 8% 7% 8% 7% 8% 8% 8%  ;
+  grid-gap: 0px;
+  /* justify-items: center; */
+  align-items: center;
+
+
+}
+
+.box {
+  background: rgba(0, 0, 0, 0 );
+  background: clear;
+  color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 75 %;
+  text-shadow: 4px 4px #000000;
+
+}
+
+.hidden{
+  padding-top: 50px;
+  font-size: 50px;
+  color: white;
+  text-shadow: 4px, 4px, black;
+  text-align: center;
+  visibility: hidden;
+}
+
+.unhidden{
+  padding-top: 50px;
+  font-size: 50px;
+  color: white;
+  text-shadow: 4px, 4px, black;
+  text-align: center;
+  visibility: visible;
+}
+.Ebox {
+  background: clear;
+  visibility: hidden;
+  color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 75 %;
+}
+
+.midbox {
+  grid-column: 2 /  4  ;
+  background-color: clear;
+  color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 75 %;
+}
 
 .logo {
   padding: 1rem 0 0 0;
