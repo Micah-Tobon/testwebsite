@@ -40,7 +40,6 @@
       <div class="navitem discord">Join the Discord</div>
     </a>
   </div>
-
   <script>
     // Initialize Firebase
     function hidetext(){
@@ -61,6 +60,7 @@
 <script>
 </script>
   <script type="text/javascript">
+  var temp = 1;
       /**
        * Function called when clicking the Login/Logout button.
        */
@@ -132,7 +132,10 @@
             var isAnonymous = user.isAnonymous;
             var uid = user.uid;
             var providerData = user.providerData;
-            document.getElementById("test-form").style.visibility="visible";
+            if(temp != 0){
+              document.getElementById("test-form").style.visibility="visible";
+              temp = 0
+            }
 
             // [START_EXCLUDE]
             document.getElementById('quickstart-sign-in-status').textContent = 'Signed in';
