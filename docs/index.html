@@ -45,7 +45,7 @@
     // Initialize Firebase
     function hidetext(){
       document.getElementById("test-form").style.visibility="hidden";
-      
+
     }
 
     var config = {
@@ -132,6 +132,7 @@
             var isAnonymous = user.isAnonymous;
             var uid = user.uid;
             var providerData = user.providerData;
+            document.getElementById("test-form").style.visibility="visible";
 
             // [START_EXCLUDE]
             document.getElementById('quickstart-sign-in-status').textContent = 'Signed in';
