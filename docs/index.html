@@ -77,7 +77,7 @@
             // The signed-in user info.
             var user = result.user;
             // [START_EXCLUDE]
-            document.getElementById('quickstart-oauthtoken').textContent = token;
+            // document.getElementById('quickstart-oauthtoken').textContent = token;
             // [END_EXCLUDE]
           }).catch(function(error) {
             // Handle Errors here.
@@ -101,10 +101,14 @@
         } else {
           // [START signout]
           firebase.auth().signOut();
+          document.getElementById("test-form").style.visibility="hidden";
+
           // [END signout]
         }
         // [START_EXCLUDE]
         document.getElementById('quickstart-sign-in').disabled = true;
+        document.getElementById("test-form").style.visibility="visible";
+
         // [END_EXCLUDE]
       }
       // [END buttoncallback]
@@ -126,13 +130,7 @@
             var isAnonymous = user.isAnonymous;
             var uid = user.uid;
             var providerData = user.providerData;
-            if(temp === 1){
-              document.getElementById("test-form").style.visibility="visible";
-              temp = 2;
-            }else{
-              document.getElementById("test-form").style.visibility="hidden";
 
-            }
             // [START_EXCLUDE]
             document.getElementById('quickstart-sign-in-status').textContent = 'Signed in';
             document.getElementById('quickstart-sign-in').textContent = 'Sign out';
@@ -141,7 +139,7 @@
           } else {
             // User is signed out.
             // [START_EXCLUDE]
-            document.getElementById("test-form").style.visibility="hidden";
+            // document.getElementById("test-form").style.visibility="hidden";
 
             document.getElementById('quickstart-sign-in-status').textContent = 'Signed out';
             document.getElementById('quickstart-sign-in').textContent = 'Sign in with Google';
