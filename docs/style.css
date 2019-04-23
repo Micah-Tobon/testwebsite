@@ -32,7 +32,7 @@
   font-size:14pt;
 }
 
-.wrapper {
+/* .wrapper {
   visibility: hidden;
   display: grid;
   grid-template-columns: 25% 25% 25%;
@@ -42,7 +42,7 @@
   align-items: center;
 
 
-}
+} */
 .wrapper2 {
   visibility: visible;
   display: grid;
@@ -54,7 +54,17 @@
 
 
 }
+#test-form{
+  visibility: hidden;
+  display: grid;
+  grid-template-columns: 25% 25% 25%;
+  grid-template-rows: 8% 8% 8% 7% 8% 7% 8% 8% 8%  ;
+  grid-gap: 0px;
+  /* justify-items: center; */
+  align-items: center;
 
+
+}
 .box {
   background: rgba(0, 0, 0, 0 );
   background: clear;
