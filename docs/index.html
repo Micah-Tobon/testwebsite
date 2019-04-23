@@ -53,7 +53,13 @@
     };
     firebase.initializeApp(config);
   </script>
-
+<!-- <script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("p:last").removeClass("wrapper").addClass("wrapper2");
+  });
+});
+</script> -->
   <script type="text/javascript">
       /**
        * Function called when clicking the Login/Logout button.
@@ -123,6 +129,7 @@
             var isAnonymous = user.isAnonymous;
             var uid = user.uid;
             var providerData = user.providerData;
+            $("wrapper:last").removeClass("wrapper").addClass("wrapper2");
             // item.children[0].className = "wrapper2"
             // [START_EXCLUDE]
             document.getElementById('quickstart-sign-in-status').textContent = 'Signed in';
