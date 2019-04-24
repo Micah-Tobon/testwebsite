@@ -1,12 +1,15 @@
 *{
   box-sizing: border-box;
+  border-radius: 100px;
 }
 
 .body2{
   line-height:1.6;
   font-size: 20px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: black;
+  font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
   padding:1em;
+
 }
 
 .container{
@@ -14,6 +17,8 @@
   margin-left:auto;
   margin-right:auto;
   padding:1em;
+  border-radius: 2000000px;
+  border-left: solid, 300px, red;
 }
 
 ul{
@@ -24,7 +29,9 @@ ul{
 .brand{
   text-align: center;
 }
-
+h3{
+  justify-content: center;
+}
 .brand span{
   color:#fff;
 }
@@ -34,18 +41,22 @@ ul{
 }
 
 .wrapper > *{
-  padding: 1em;
+  padding: .5em;
 }
 
 .company-info{
-  background:#ffffff;
+  background:#c9e6ff;
+  height: auto;
 }
 
 .company-info h3, .company-info ul{
   text-align: center;
-  margin:0 0 1rem 0;
+  margin:0 10 1rem 0;
 }
-
+.socials{
+  font-weight: bold;
+  font-size: 40px;
+}
 .contact{
   background:#f9feff;
 }
@@ -72,11 +83,11 @@ ul{
 .contact form button, .contact form input, .contact form textarea{
   width:100%;
   padding:1em;
-  border:1px solid #c9e6ff;
+  border:1px solid #9bb6f7;
 }
 
 .contact form button{
-  background:#c9e6ff;
+  background:#9be0f7;
   border:0;
   text-transform: uppercase;
 }
@@ -100,6 +111,6 @@ ul{
   }
 
   .company-info h3, .company-info ul, .brand{
-    text-align: left;
+    text-align: center;
   }
 }
