@@ -98,6 +98,7 @@ ul {
 .navitem.signin{
   float: right;
   color: white;
+  border-style: none;
 }
 
 @media (min-width: 576px) {
