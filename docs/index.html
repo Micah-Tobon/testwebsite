@@ -109,12 +109,15 @@ var temp = 1;
           var providerData = user.providerData;
           // [START_EXCLUDE]
           document.getElementById('quickstart-sign-in').textContent = 'Sign out';
-          document.getElementById('test').style.visibility = "visible";
+          document.getElementById('form').style.visibility = "visible";
+          document.getElementById('signinwarning').style.visibility = "visible";
+
           // [END_EXCLUDE]
         } else {
           // User is signed out.
           // [START_EXCLUDE]
-          document.getElementById('test').style.visibility = "hidden";
+          document.getElementById('signinwarning').style.visibility = "hidden";
+          document.getElementById('form').style.visibility = "hidden";
           document.getElementById('quickstart-sign-in').textContent = 'Sign in with Google';
 
           // [END_EXCLUDE]
@@ -162,7 +165,8 @@ var temp = 1;
 <div id="signinwarning">
   <div class="text-md" > Please sign into your Google Account to view Form</div>
 </div>
-<div id="test">
+
+<div id="form">
 <div class="body">
   <div class="container">
     <div class="wrapper">
