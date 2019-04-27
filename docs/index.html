@@ -82,12 +82,10 @@ var temp = 1;
       } else {
         // [START signout]
         firebase.auth().signOut();
-
         // [END signout]
       }
       // [START_EXCLUDE]
       document.getElementById('quickstart-sign-in').disabled = true;
-
       // [END_EXCLUDE]
     }
     // [END buttoncallback]
@@ -109,18 +107,13 @@ var temp = 1;
           var isAnonymous = user.isAnonymous;
           var uid = user.uid;
           var providerData = user.providerData;
-
-
           // [START_EXCLUDE]
-          // document.getElementById('quickstart-sign-in-status').textContent = 'Signed in';
           document.getElementById('quickstart-sign-in').textContent = 'Sign out';
+          document.getElementById('test').visibility = hidden;
           // [END_EXCLUDE]
         } else {
           // User is signed out.
           // [START_EXCLUDE]
-          // document.getElementById("test-form").style.visibility="hidden";
-
-          // document.getElementById('quickstart-sign-in-status').textContent = 'Signed out';
           document.getElementById('quickstart-sign-in').textContent = 'Sign in with Google';
 
           // [END_EXCLUDE]
@@ -167,6 +160,7 @@ var temp = 1;
   </div>
 
 <div class="body">
+  <div id="test">
   <div class="container">
     <div class="wrapper">
       <div class="company-info">
@@ -240,8 +234,8 @@ var temp = 1;
     </div>
   </div>
 </div>
+</div>
 <div class="quickstart-user-details-container">
-  <!-- <span id="quickstart-sign-in-status"></span> -->
   <pre><code id="quickstart-account-details"></code></pre>
   <pre><code id="quickstart-oauthtoken"></code></pre>
 </div>

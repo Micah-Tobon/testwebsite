@@ -20,7 +20,9 @@
   border-radius: 20px;
   border-left: solid, 300px, red;
 }
-
+.body2{
+  visibility: hidden;
+}
 ul{
   list-style: none;
   padding:0;
