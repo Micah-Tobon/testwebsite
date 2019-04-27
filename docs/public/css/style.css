@@ -101,7 +101,9 @@ ul {
   color: white;
   border-style: none;
 }
-
+#quickstart-sign-in-status{
+  visibility: hidden;
+}
 @media (min-width: 576px) {
   html {
     font-size: 1.4rem;
