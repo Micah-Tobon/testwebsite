@@ -95,6 +95,9 @@ ul {
 .navitem.discord {
   float: right;
 }
+.navitem.signin{
+  float: right;
+}
 
 @media (min-width: 576px) {
   html {
