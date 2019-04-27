@@ -110,13 +110,13 @@ var temp = 1;
           // [START_EXCLUDE]
           document.getElementById('quickstart-sign-in').textContent = 'Sign out';
           document.getElementById('form').style.visibility = "visible";
-          document.getElementById('signinwarning').style.visibility = "visible";
+          document.getElementById('signinwarning').style.visibility = "hidden";
 
           // [END_EXCLUDE]
         } else {
           // User is signed out.
           // [START_EXCLUDE]
-          document.getElementById('signinwarning').style.visibility = "hidden";
+          document.getElementById('signinwarning').style.visibility = "visible";
           document.getElementById('form').style.visibility = "hidden";
           document.getElementById('quickstart-sign-in').textContent = 'Sign in with Google';
 
