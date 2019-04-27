@@ -111,7 +111,6 @@ var temp = 1;
           document.getElementById('quickstart-sign-in').textContent = 'Sign out';
           document.getElementById('form').style.visibility = "visible";
           document.getElementById('signinwarning').style.visibility = "hidden";
-
           // [END_EXCLUDE]
         } else {
           // User is signed out.
@@ -119,7 +118,6 @@ var temp = 1;
           document.getElementById('signinwarning').style.visibility = "visible";
           document.getElementById('form').style.visibility = "hidden";
           document.getElementById('quickstart-sign-in').textContent = 'Sign in with Google';
-
           // [END_EXCLUDE]
         }
         // [START_EXCLUDE]
@@ -133,9 +131,6 @@ var temp = 1;
       initApp();
     };
   </script>
-
-
-
 
 <body>
   <div class="navbar">
@@ -162,6 +157,7 @@ var temp = 1;
       <button class="navitem signin" id="quickstart-sign-in" >Sign in with Google</button>
     </div>
   </div>
+
 <div id="signinwarning">
   <div class="text-md" > Please sign into your Google Account to view Form</div>
 </div>
@@ -182,9 +178,7 @@ var temp = 1;
           </a>
           <br>
           <img src="public/assets/img/facebook.png" style="align:left; width:50px;height:40px;">
-          <a href="https://www.facebook.com/groups/OhioULoL/" style="color:#3C5A99;">
-            Facebook
-          </a>
+          <a href="https://www.facebook.com/groups/OhioULoL/" style="color:#3C5A99;">Facebook</a>
           <div class="test">
         </div>
         </div>
@@ -216,14 +210,14 @@ var temp = 1;
           </p>
           <p>
 
-            <label>Day</label>
+            <label>Day Availability</label>
             <input type="email" name="day1">
             <input type="email" name="day2">
             <input type="email" name="day3">
 
           </p>
           <p>
-            <label>Time Availability</label>
+            <label>Time Availability(for Days)</label>
             <input type="text" name="time1">
             <input type="text" name="time2">
             <input type="text" name="time3">
